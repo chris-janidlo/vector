@@ -2,11 +2,17 @@
 
 namespace server
 {
-    class Program
+class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        int counter = 0;
+
+        while (true)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(counter++);
+            System.Threading.Thread.Sleep(1000);
         }
     }
+}
 }
